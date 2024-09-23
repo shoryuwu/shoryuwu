@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Portofolio Muhammad Alif Setiawan - Gamers, Reseller, Design">
+    <title>Muhammad Alif Setiawan</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="css.css"> <!-- Pastikan ini adalah path yang benar untuk file CSS Anda -->
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* Navbar */
+        .navbar {
+            padding: 1rem;
+        }
+
+        /* Hero Section */
+        .hero-section {
+            height: 100vh; 
+            background: url('fotoalif.jpg') no-repeat center center/cover; 
+            color: white;
+            position: relative;
+        }
+
+        .profile-picture {
+            width: 150px;
+            height: 150px;
+            border: 5px solid white;
+            transition: transform 0.3s ease-in-out;
+            position: relative;
+            z-index: 2; 
+        }
+
+        .profile-picture:hover {
+            transform: scale(1.1);
+        }
+
+        .hero-section::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: rgba(19, 20, 20, 0.7); 
+            z-index: 1; 
+        }
+
+        .header h1 {
+            font-size: 3rem;
+            z-index: 2; 
+            position: relative;
+        }
+
+        .lead {
+            font-size: 1.2rem;
+            z-index: 2;
+        }
+
+        /* About Section */
+        .about-text {
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        /* Projects Section */
+        .card {
+            position: relative;
+            height: 300px; 
+            color: white; 
+        }
+
+        .card-body {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            padding: 1rem; 
+            background-color: rgba(0, 0, 0, 0.5); 
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: white;
+            padding: 1.5rem 0;
+            width: 100%;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <div class="d-flex justify-content-between w-100">
+                <a class="navbar-brand" href="#">MUHAMMAD ALIF SETIAWAN</a>
+                <div>
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Profile Section -->
+    <header class="hero-section text-center text-white d-flex align-items-center justify-content-center">
+        <div class="container">
+            <img src="fotoalif1.jpg" alt="Wahyu's Profile Picture" class="rounded-circle mb-4 profile-picture">
+            <h1 class="display-4">Muhammad Alif Setiawan Portfolio</h1>
+            <p class="lead">Gamers | Reseller | Design</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">About Me</h2>
+            <p class="about-text">Hallo aku Alif, Aku orang yang hobi menghasilkan uang lewat game</p>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Hobi Sayaaa</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm" style="background-image: url('ml1.jpg'); background-size: cover; color: white;">
+                        <div class="card-body">
+                            <h5 class="card-title">Mobile Legends 8/10</h5>
+                            <p class="card-text">Lumayan ngurangin stres karna game ini lumayan banyak gacha skin kerennya</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm" style="background-image: url('pproblox1.jpg'); background-size: cover; color: white;">
+                        <div class="card-body">
+                            <h5 class="card-title">Roblox 100/10</h5>
+                            <p class="card-text">Game dari jaman di warnet sampai kuliah seru banget dah ni roblox xD</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm" style="background-image: url('idp1.png'); background-size: cover; color: white;">
+                        <div class="card-body">
+                            <h5 class="card-title">GTA V RP 7/10</h5>
+                            <p class="card-text">GTA RP lumayan seru karna bisa bermain peran disini bersama teman"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Contact Me</h2>
+            <p>Sekian portofolio saya yang sangat singkat dan biasa" saja mohon dimaklumi hhehe</p>
+            
+            <!-- Email -->
+            <div class="mb-3">
+                <a href="mailto:alifcrisisaction@gmail.com" class="btn btn-outline-primary d-flex align-items-center justify-content-center" style="width: fit-content; margin: 0 auto;">
+                    <i class="bi bi-envelope" style="font-size: 2rem;"></i>
+                    <span class="ms-2">alifcrisisaction@gmail.com</span>
+                </a>
+            </div>
+            
+            <!-- WhatsApp -->
+            <div class="mb-3">
+                <a href="https://wa.me/6281350148766" class="btn btn-outline-success d-flex align-items-center justify-content-center" style="width: fit-content; margin: 0 auto;">
+                    <i class="bi bi-whatsapp" style="font-size: 2rem;"></i>
+                    <span class="ms-2">+62 813 501 487 66</span>
+                </a>
+            </div>
+
+            <!-- Facebook -->
+            <div class="mb-3">
+                <a href="https://www.facebook.com/shoryualif" class="btn btn-outline-primary d-flex align-items-center justify-content-center" style="width: fit-content; margin: 0 auto;">
+                    <i class="bi bi-facebook" style="font-size: 2rem;"></i>
+                    <span class="ms-2">Shoryu Alif</span>
+                </a>
+            </div>
+
+            <h3 class="mt-4">Send a Message</h3>
+            <form id="contactForm">
+                <div class="mb-3">
+                    <label for="name" class="form-label">Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>&copy; 2024 shoryu. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

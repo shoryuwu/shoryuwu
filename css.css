@@ -1,0 +1,84 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+}
+
+/* Navbar */
+.navbar {
+    padding: 1rem;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 100vh;
+    background: url('fotoalif.jpg') no-repeat center center/cover;
+    color: white;
+    position: relative;
+}
+
+.profile-picture {
+    width: 150px;
+    height: 150px;
+    border: 5px solid white;
+    transition: transform 0.3s ease-in-out;
+    position: relative;
+    z-index: 2;
+}
+
+.profile-picture:hover {
+    transform: scale(1.1);
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(19, 20, 20, 0.7);
+    z-index: 1;
+}
+
+.header h1 {
+    font-size: 3rem;
+    z-index: 2;
+    position: relative;
+}
+
+.lead {
+    font-size: 1.2rem;
+    z-index: 2;
+}
+
+/* Projects Section */
+.card {
+    position: relative;
+    height: 300px;
+    color: white;
+}
+
+.card-body {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 1.5rem 0;
+    width: 100%;
+}
